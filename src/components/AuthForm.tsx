@@ -3,15 +3,13 @@ import Connections from "./Connections";
 
 export default function AuthForm() {
   return (
-    <div className="mt-8 rounded-xl space-y-8 shadow-sm p-6 w-3/4 bg-white">
+    <div className="mt-8 rounded-xl space-y-8 shadow-sm p-6 md:w-3/4 bg-white">
       <form>
-        <label htmlFor="email" className="block mb-1.5">
-          Email
-        </label>
+        <label className="block mb-1.5">Email</label>
         <input
           type="email"
           placeholder="Enter your email address"
-          className="w-3/4 rounded-md border border-input bg-background px-3 py-1 transition-all
+          className="md:w-3/4 w-full rounded-md border border-input bg-background px-3 py-1 transition-all
     focus:border-input/200 focus:ring-2 focus:ring-input/200
     focus-visible:outline-none"
         />

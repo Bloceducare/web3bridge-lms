@@ -7,6 +7,7 @@ import bgSphere from "@/assets/bg/sphere.svg";
 import bgSpiral from "@/assets/bg/spiral.svg";
 import Logo from "@/assets/logo-light.svg";
 import AuthForm from "@/components/AuthForm";
+import OnboardingModal from "@/components/modal";
 
 export default function Page() {
   return (
@@ -39,7 +40,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className=" rounded-2xl md:h-auto h-48 shadow-sm absolute inset-x-0 inset-y-36 bg-gradient-to-r from-gradient-start via-gradient-mid to-gradient-end top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+        <div className=" rounded-2xl md:h-auto h-60 md:w-auto w-3/4 shadow-sm absolute inset-x-0 inset-y-36 bg-gradient-to-r from-gradient-start via-gradient-mid to-gradient-end top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
           <div className="flex flex-col space-y-4 justify-center my-8 items-center">
             <Image src={Logo} alt="logo" />
             <p className="text-center">
@@ -54,14 +55,14 @@ export default function Page() {
           <Image src={bgSphere} className="h-44 w-44" alt="bg" />
         </div>
       </div>
-
       {/* Form */}
-      <div className="w-full md:w-1/2 bg-gradient-mid/200 p-8 pt-20">
+      <div className="w-full h-[37rem] z-30 md:h-auto md:w-1/2 bg-gradient-end/100 p-8 md:pt-16">
         <h1>Welcome!</h1>
         <p>Please sign in to your account.</p>
 
         <AuthForm />
       </div>
+      <OnboardingModal isOpen={true} />
     </div>
   );
 }

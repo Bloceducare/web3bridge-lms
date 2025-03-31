@@ -33,7 +33,7 @@ export default function Connections() {
       {connect.map((name, i) => {
         return (
           <div
-            className="border-2 cursor-pointer md:w-[40%] w-full rounded-4xl my-2.5 mx-auto border-red-600 text-red-600 p-2 flex justify-center"
+            className="border-2 cursor-pointer lg:w-[50%] md:w-[65%] w-[70%] rounded-4xl my-2.5 mx-auto border-red-600 text-red-600 p-2 flex justify-center"
             key={i}
           >
             <Image src={name.img} className="w-8 h-8 me-2" alt={`${name}`} />
