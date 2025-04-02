@@ -15,7 +15,7 @@ const GradientCard: React.FC<CardProps> = ({
   altText,
 }) => {
   return (
-    <div className="lg:w-[193] h-[305] w-full rounded-4xl bg-black overflow-hidden bg- text-white flex flex-col justify-between ">
+    <div className="lg:w-[193] h-[405] lg:h-[305] rounded-4xl bg-black overflow-hidden  text-white flex flex-col justify-between ">
       {/* Title Section */}
       <div className="py-4 text-center bg-gradient-to-r from-[rgba(111,110,110,0.31)] to-[rgba(50,49,49,0.31)]">
         <h2 className="text-xl font-semibold">{title}</h2>

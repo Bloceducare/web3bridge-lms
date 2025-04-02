@@ -37,8 +37,8 @@ const CardsSection = () => {
               />
             </div>
           </div>
-          <div className=" w-full flex items-center bg-gradient-to-b from-[#151515] to-[#1F1F1F] text-white rounded-4xl">
-            <button className="flex items-center cursor-pointer w-full lg:w-[302px]  h-[111px] ">
+          <div className=" w-full lg:w-[302px] flex items-center bg-gradient-to-b from-[#151515] to-[#1F1F1F] text-white rounded-4xl">
+            <button className="flex items-center cursor-pointer    h-[111px] ">
               <Image
                 src={start}
                 alt="Start"
