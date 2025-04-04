@@ -1,4 +1,4 @@
-import Art from '@/assests/Art.svg?url'
+import Art from '@/assests/Art.svg'
 
 export const Web2Course = [
     {

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from './ui/Button';
-import logo from '@/public/assets/logo.svg';
+// import logo from '@/public/assets/logo.svg';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="flex items-center justify-between px-4 sm:px-8 py-4 bg-[#FCF7F2] shadow-lg fixed top-0 left-0 w-full z-10">
       <Link href="/" className="flex items-center">
-        <Image src={logo} alt="Web3Bridge Logo" width={120} height={40} />
+        <Image src='/assets/logo.svg' alt="Web3Bridge Logo" width={120} height={40} />
       </Link>
       
       {/* Desktop Navigation */}

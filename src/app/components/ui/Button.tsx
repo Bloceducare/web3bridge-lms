@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import redarrow from "@/public/assets/redarrow.svg";
-import whitearrow from "@/public/assets/whitearrow.svg";
+// import redarrow from "@/public/assets/redarrow.svg";
+// import whitearrow from "@/public/assets/whitearrow.svg";
 
 interface ButtonProps {
   text: string;
@@ -41,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
       {icon && (
         <span className=" ml-6">
           <Image
-            src={variant === "secondary" ? redarrow : whitearrow}
+            src={variant === "secondary" ? '/assets/redarrow.svg' : '/assets/whitearrow.svg'}
             width={28}
             height={28}
             alt="Arrow"

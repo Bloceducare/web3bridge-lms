@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { SearchIcon } from "@/assests/icon"; 
+import SearchIcon from "@/assests/icon/search.svg"; 
 import Image from "next/image";
 
 interface InputProps {

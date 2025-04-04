@@ -1,11 +1,11 @@
-import SearchIcon from "./search.svg?url";
-import CarbonRoadmap from "./carbon_roadmap.svg?url";
-import Clock from "./clock.svg?url"
-import Cap from "./graduating cap.svg?url"
-import Tasks from "./book-open.svg?url"
-import Filter from "./filter-alt.svg?url"
-import List from "./list.svg?url"
-import Grid from "./grid.svg?url"
+import SearchIcon from "./search.svg";
+import CarbonRoadmap from "./carbon_roadmap.svg"
+import Clock from "./clock.svg"
+import Cap from "./graduating cap.svg"
+import Tasks from "./book-open.svg"
+import Filter from "./filter-alt.svg"
+import List from "./list.svg"
+import Grid from "./grid.svg"
 
 
 
