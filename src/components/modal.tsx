@@ -2,10 +2,10 @@
 
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
-import { SetStateAction, useState, type FC } from "react";
+import { useState, type FC } from "react";
 
-import modalImg1 from "@/assets/Web 2.0 Beginner Track.svg";
-import modalImg2 from "@/assets/camera.svg";
+import modalImg1 from "../../public/assets/Web 2.0 Beginner Track.svg";
+import modalImg2 from "../../public/assets/camera.svg";
 
 interface OnboardingModalProps {
   isOpen: boolean;

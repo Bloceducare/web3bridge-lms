@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import bgTwisted from "@/assets/bg/twisted-torus.svg";
-import bgBracket from "@/assets/bg/curly-brackets.svg";
-import bgTag from "@/assets/bg/inequality.svg";
-import bgSphere from "@/assets/bg/sphere.svg";
-import bgSpiral from "@/assets/bg/spiral.svg";
-import Logo from "@/assets/logo-light.svg";
+import bgTwisted from "../../../public/assets/bg/twisted-torus.svg";
+import bgBracket from "../../../public/assets/bg/curly-brackets.svg";
+import bgTag from "../../../public/assets/bg/inequality.svg";
+import bgSphere from "../../../public/assets/bg/sphere.svg";
+import bgSpiral from "../../../public/assets/bg/spiral.svg";
+import Logo from "../../../public/assets/logo-light.svg";
 import AuthForm from "@/components/AuthForm";
 import OnboardingModal from "@/components/modal";
 
@@ -62,7 +62,7 @@ export default function Page() {
 
         <AuthForm />
       </div>
-      <OnboardingModal isOpen={true} />
+      <OnboardingModal isOpen={false} />
     </div>
   );
 }
