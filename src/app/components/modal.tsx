@@ -4,8 +4,8 @@ import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import { useState, type FC } from "react";
 
-import modalImg1 from "../../public/assets/Web 2.0 Beginner Track.svg";
-import modalImg2 from "../../public/assets/camera.svg";
+import modalImg1 from "@/public/assets/Web 2.0 Beginner Track.svg";
+import modalImg2 from "@/public/assets/camera.svg";
 
 interface OnboardingModalProps {
   isOpen: boolean;
@@ -131,7 +131,7 @@ const OnboardingModal: FC<OnboardingModalProps> = ({ isOpen }) => {
                 <input
                   type="email"
                   placeholder="Enter your email Could be a nickname"
-                  className="w-full rounded-md border border-input bg-background px-3 py-1 transition-all focus:border-input/200 focus:ring-2 focus:ring-input/200 focus-visible:outline-none"
+                  className="w-full rounded-md border border-input px-3 py-1 transition-all focus:border-input/200 focus:ring-2 focus:ring-input/200 focus-visible:outline-none"
                 />
               </form>
             </div>

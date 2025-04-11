@@ -1,15 +1,18 @@
+"use client";
 import Image from "next/image";
 
-import bgTwisted from "../../../public/assets/bg/twisted-torus.svg";
-import bgBracket from "../../../public/assets/bg/curly-brackets.svg";
-import bgTag from "../../../public/assets/bg/inequality.svg";
-import bgSphere from "../../../public/assets/bg/sphere.svg";
-import bgSpiral from "../../../public/assets/bg/spiral.svg";
-import Logo from "../../../public/assets/logo-light.svg";
-import AuthForm from "@/components/AuthForm";
-import OnboardingModal from "@/components/modal";
+import bgTwisted from "@/public/assets/bg/twisted-torus.svg?url";
+import bgBracket from "@/public/assets/bg/curly-brackets.svg?url";
+import bgTag from "@/public/assets/bg/inequality.svg?url";
+import bgSphere from "@/public/assets/bg/sphere.svg?url";
+import bgSpiral from "@/public/assets/bg/spiral.svg?url";
+import Logo from "@/public/assets/logo-light.svg?url";
+import AuthForm from "@/app/components/AuthForm";
+import OnboardingModal from "@/app/components/modal";
+import { useState } from "react";
 
 export default function Page() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="flex flex-wrap-reverse min-h-screen">
       <div className="relative w-full md:w-1/2">
@@ -60,9 +63,9 @@ export default function Page() {
         <h1>Welcome!</h1>
         <p>Please sign in to your account.</p>
 
-        <AuthForm />
+        <AuthForm setOpen={setOpen} />
       </div>
-      <OnboardingModal isOpen={false} />
+      <OnboardingModal isOpen={open} />
     </div>
   );
 }

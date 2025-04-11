@@ -1,8 +1,8 @@
-import metaMask from "../../public/assets/icons/metamask.svg";
-import walletConnect from "../../public/assets/icons/walletconnect.svg";
-import google from "../../public/assets/icons/google.svg";
-import github from "../../public/assets/icons/github.svg";
-import argent from "../../public/assets/icons/walletconnect.svg";
+import metaMask from "@/public/assets/icons/metamask.svg";
+import walletConnect from "@/public/assets/icons/walletconnect.svg";
+import google from "@/public/assets/icons/google.svg";
+import github from "@/public/assets/icons/github.svg";
+import argent from "@/public/assets/icons/walletconnect.svg";
 import Image from "next/image";
 
 export default function Connections() {
