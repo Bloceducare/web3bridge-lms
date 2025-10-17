@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "./ui/Button";
 // import logo from '@/public/assets/logo.svg';
+import Button from "@/component/ui/Button";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         <Link href="/auth" className="text-gray-800 hover:text-red-600">
           Login
         </Link>
-        <Button text="Connect Wallet" href="/connect" variant="primary" />
+        <Button variants="active">Connect Wallet</Button>
       </div>
 
       {/* Mobile Menu Button */}
@@ -115,12 +115,7 @@ const Navbar: React.FC = () => {
             >
               Login
             </Link>
-            <Button
-              text="Connect Wallet"
-              href="/connect"
-              variant="primary"
-              className="w-[208px] h-[58px] "
-            />
+            <Button variants="active">Connect Wallet</Button>
           </div>
         </div>
       )}

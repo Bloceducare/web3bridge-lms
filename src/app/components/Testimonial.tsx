@@ -1,5 +1,5 @@
 import React from "react";
-import { CgProfile } from "react-icons/cg";
+// import { CgProfile } from "react-icons/cg";
 
 interface TestimonialProps {
   quote: string;
@@ -19,7 +19,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <p className="text-gray-800 mb-4 text-lg text-center">{quote}</p>
       <div className="flex justify-center items-center gap-2 mb-2">
         <div className="w-10 h-10 flex justify-center items-center">
-          <CgProfile className="text-gray-500" size={48} />
+          {/* <CgProfile className="text-gray-500" size={48} /> */}
         </div>
         <p className="font-medium text-bold text-xl text-gray-900">{name}</p>
       </div>

@@ -1,18 +1,101 @@
 @import "tailwindcss";
 @config "../../tailwind.config.ts";
 
+/* =======================================
+   Root Variables
+   ======================================= */
 :root {
-  --background: #ffffff;
+  /* ---------- Base Colors ---------- */
+  --background: #fffef5;
   --foreground: #171717;
+
+  /* ---------- Neutral Backgrounds ---------- */
+  --bg-primary-white: #fffbf3;
+  --bg-secondary-white: #ffefef;
+  --bg-dark-white: #bfeeff;
+  --bg-gray-white: #ffe4e4;
+
+  /* ---------- Brand Colors ---------- */
+  --color-primary: #0b8311;
+  --color-secondary: #131313;
+
+  /* ---------- Text Colors ---------- */
+  --text-vibrant-grey: #4d4d4d;
+  --text-primary-red: #fa0101;
+  --text-primary-black: #1b1b1b;
+  --text-light-red: #ca1b1b;
+
+  /* ---------- Status Colors ---------- */
+  --color-danger: #fb4f4f;
+  --color-warning: #fab38b;
+  --color-success: #3cd366;
+
+  /* ---------- Button System ---------- */
+  --button-primary-bg: #CA1B1B;
+  --button-primary-text: #ffffff;
+  --button-hover-from: rgba(255, 147, 147, 0.1);
+  --button-hover-to: rgba(230, 39, 39, 0.1);
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* =======================================
+   Tailwind Theme Integration
+   ======================================= */
+   @theme inline {
+    /* =======================================
+       Base Colors
+    ======================================= */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+  
+    /* =======================================
+       Typography
+    ======================================= */
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+  
+    /* =======================================
+       Text Colors
+    ======================================= */
+    --text-primary-red: var(--text-primary-red);
+    --text-primary-black: var(--text-primary-black);
+    --text-vibrant-grey: var(--text-vibrant-grey);
+    --text-light-red: var(--text-light-red);
+  
+    /* =======================================
+       Brand Colors
+    ======================================= */
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+  
+    /* =======================================
+       Status Colors
+    ======================================= */
+    --color-danger: var(--color-danger);
+    --color-warning: var(--color-warning);
+    --color-success: var(--color-success);
+  
+    /* =======================================
+       Background Colors
+    ======================================= */
+    --bg-primary-white: var(--bg-primary-white);
+    --bg-secondary-white: var(--bg-secondary-white);
+    --bg-dark-white: var(--bg-dark-white);
+    --bg-gray-white: var(--bg-gray-white);
+  
+    /* =======================================
+       Button System
+    ======================================= */
+    --button-primary-bg: var(--button-primary-bg);
+    --button-primary-text: var(--button-primary-text);
+    --button-hover-from: var(--button-hover-from);
+    --button-hover-to: var(--button-hover-to);
+  }
+  
 
+/* =======================================
+   Dark Mode
+   ======================================= */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -20,9 +103,12 @@
   }
 }
 
+/* =======================================
+   Base Styles
+   ======================================= */
 body {
-  background: #ffffff;
-  color: black;
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 

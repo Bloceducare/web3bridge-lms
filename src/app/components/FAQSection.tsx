@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { CiCirclePlus } from "react-icons/ci";
 
 interface FAQItemProps {
   question: string;
@@ -22,7 +21,6 @@ const FAQItem: React.FC<FAQItemProps> = ({
       onClick={onClick}
     >
       <div className="flex items-center">
-        <CiCirclePlus className=" mr-3" size={24} />
         <p className="text-gray-800">{question}</p>
       </div>
       {isOpen && answer && (
