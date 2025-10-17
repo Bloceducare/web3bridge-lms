@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Button from "../components/ui/Button";
 import start from "@/public/assets/start.svg";
+import Button from "@/component/ui/Button";
 import acticon from "@/public/assets/acticon.svg";
 import training from "@/public/assets/training.svg";
 import card2 from "@/public/assets/card2.svg";
@@ -29,12 +29,7 @@ const CardsSection = () => {
               practicing.
             </p>
             <div className="lg:mt-10 mt-6">
-              <Button
-                text="Start Learning"
-                href="/learn"
-                variant="outline"
-                icon={true}
-              />
+            <Button variants="inactive">Start Learning</Button>
             </div>
           </div>
           <div className=" w-full lg:w-[302px] flex items-center bg-gradient-to-b from-[#151515] to-[#1F1F1F] text-white rounded-4xl">
@@ -109,12 +104,7 @@ const CardsSection = () => {
               />
             </div>
             <div className="mt-4">
-              <Button
-                text="Explore Courses"
-                href="/courses"
-                variant="outline"
-                icon={true}
-              />
+              <Button variants="active">ExpLore Courses</Button>
             </div>
           </div>
           <div className="  flex items-center bg-gradient-to-b from-[#004617] to-[#516E00] text-white rounded-4xl">

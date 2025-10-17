@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import logo from "@/public/assets/logo.svg";
 
 const Footer: React.FC = () => {
@@ -135,25 +133,21 @@ const Footer: React.FC = () => {
               href="https://twitter.com/web3bridge"
               className="text-gray-600 hover:text-gray-900"
             >
-              <FaXTwitter size={20} />
             </Link>
             <Link
               href="https://linkedin.com/company/web3bridge"
               className="text-gray-600 hover:text-gray-900"
             >
-              <FaLinkedin size={20} />
             </Link>
             <Link
               href="https://instagram.com/web3bridge"
               className="text-gray-600 hover:text-gray-900"
             >
-              <FaInstagram size={20} />
             </Link>
             <Link
               href="https://youtube.com/web3bridge"
               className="text-gray-600 hover:text-gray-900"
             >
-              <FaYoutube size={20} />
             </Link>
           </div>
           <div className=" text-center text-gray-500 text-sm md:ml-24">
