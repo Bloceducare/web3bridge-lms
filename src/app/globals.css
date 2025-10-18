@@ -12,12 +12,15 @@
   /* ---------- Neutral Backgrounds ---------- */
   --bg-primary-white: #fffbf3;
   --bg-secondary-white: #ffefef;
+  --bg-tertiary-white: #BFEEFF;
   --bg-dark-white: #bfeeff;
   --bg-gray-white: #ffe4e4;
+  --bg-primary-red: #CA1B1B;
 
   /* ---------- Brand Colors ---------- */
   --color-primary: #0b8311;
   --color-secondary: #131313;
+  --color-tertiary: #AE0027;
 
   /* ---------- Text Colors ---------- */
   --text-vibrant-grey: #4d4d4d;
@@ -35,6 +38,10 @@
   --button-primary-text: #ffffff;
   --button-hover-from: rgba(255, 147, 147, 0.1);
   --button-hover-to: rgba(230, 39, 39, 0.1);
+
+  /* -----------Border system ----------- */
+  --border-light: #AEA8A8;
+  --button-border: #D1B7B775;
 
 }
 
@@ -67,6 +74,7 @@
     ======================================= */
     --color-primary: var(--color-primary);
     --color-secondary: var(--color-secondary);
+    --color-tertiary: var(--color-tertiary);
   
     /* =======================================
        Status Colors
@@ -80,8 +88,10 @@
     ======================================= */
     --bg-primary-white: var(--bg-primary-white);
     --bg-secondary-white: var(--bg-secondary-white);
+    --bg-tertiary-white: var(--bg-tertiary-white);
     --bg-dark-white: var(--bg-dark-white);
     --bg-gray-white: var(--bg-gray-white);
+      --bg-primary-red: var(--bg-primary-red);
   
     /* =======================================
        Button System
@@ -90,6 +100,14 @@
     --button-primary-text: var(--button-primary-text);
     --button-hover-from: var(--button-hover-from);
     --button-hover-to: var(--button-hover-to);
+
+
+
+      /* =======================================
+       Border System
+    ======================================= */
+    --border-light: var(--border-light);
+    --button-border: var(--button-border);
   }
   
 
