@@ -23,6 +23,8 @@ export default function Page() {
               className="object-contain"
               alt="bg"
               priority
+              width={50}
+              height={100}
             />
           </div>
           <div className="mt-15">
@@ -32,12 +34,16 @@ export default function Page() {
                 alt="bg"
                 className="object-contain block ms-7 "
                 priority
+                width={50}
+                height={100}
               />
               <Image
                 src={bgTag}
                 alt="bg"
                 className="object-contain left-5"
                 priority
+                width={50}
+                height={100}
               />
             </div>
           </div>
@@ -45,7 +51,8 @@ export default function Page() {
 
         <div className=" rounded-2xl md:h-auto h-60 md:w-auto w-3/4 shadow-sm absolute inset-x-0 inset-y-36 bg-gradient-to-r from-gradient-start via-gradient-mid to-gradient-end top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
           <div className="flex flex-col space-y-4 justify-center my-8 items-center">
-            <Image src={Logo} alt="logo" />
+            <Image src={Logo} alt="logo"  width={50}
+              height={100} />
             <p className="text-center">
               Start your journey into blockchain technology with Web3Bridge
               learning management system
@@ -54,8 +61,10 @@ export default function Page() {
         </div>
 
         <div className="flex justify-between items-end relative h-80">
-          <Image src={bgSpiral} className="ms-5 h-44 w-44" alt="bg" />
-          <Image src={bgSphere} className="h-44 w-44" alt="bg" />
+          <Image src={bgSpiral} className="ms-5 h-44 w-44" alt="bg"  width={50}
+              height={100} />
+          <Image src={bgSphere} className="h-44 w-44" alt="bg"  width={50}
+              height={100} />
         </div>
       </div>
       {/* Form */}
