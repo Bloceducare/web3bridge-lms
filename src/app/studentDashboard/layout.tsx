@@ -11,22 +11,22 @@ const sidebarItems = [
 
   {
     icon: Assignment,
-    text: "Event",
-    href: "/dashboard/event",
+    text: "Assignment",
+    href: "/studentDashboard/assignment",
     iconFilled: AssignmentFilled,
   },
 
   {
     icon: Certification,
-    text: "Organization",
-    href: "/dashboard/organization",
+    text: "Certifications",
+    href: "/studentDashboard/certification",
     iconFilled: CertificationFilled,
   },
 
   {
     icon: LeaderBoard,
-    text: "Wallet",
-    href: "/dashboard/wallet",
+    text: "LeaderBoard",
+    href: "/studentDashboard/leaderboard",
     iconFilled: LeaderBoardFilled,
   },
 ];
@@ -37,8 +37,6 @@ function StudentDashboardLayout
 
       <section>
       <Header dashboardLinks={sidebarItems}   pathname="/studentDashboard" />
-
-
       <section className='flex pt-20 '>
         <DesktopSidebar
           sidebarItems={sidebarItems}
@@ -49,19 +47,8 @@ function StudentDashboardLayout
         <main className='flex-1 p-6 bg-gray-100 min-h-screen'>
           {children}
         </main>
-
-
       </section>
-
-
       </section>
-
-
-
-
-
-
-
 
   )
 }
