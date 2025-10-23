@@ -68,7 +68,6 @@ interface DashboardLink {
       {isMenuOpen && (
         <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999] flex justify-end">
           <div className="w-3/4 sm:w-1/2 bg-white h-full p-6 flex flex-col relative shadow-2xl animate-slide-in">
-            {/* Close Button */}
             <button
               onClick={() => setIsMenuOpen(false)}
               className="absolute top-4 right-4"
@@ -77,12 +76,10 @@ interface DashboardLink {
               <Image src={CloseIcon} alt="close" width={24} height={24} />
             </button>
 
-            {/* Logo */}
             <div className="flex items-center justify-start mb-8">
               <Image src={Logo} alt="logo" width={120} height={40} />
             </div>
 
-            {/* Header Links */}
             <div className="flex flex-col gap-4 mb-6">
               {links.map((link) => (
                 <Button
