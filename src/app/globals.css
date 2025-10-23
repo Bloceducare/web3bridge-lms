@@ -8,6 +8,7 @@
   /* ---------- Base Colors ---------- */
   --background: #fffef5;
   --foreground: #171717;
+  --app-white: #FCF7F2;
 
   /* ---------- Neutral Backgrounds ---------- */
   --bg-primary-white: #fffbf3;
@@ -54,6 +55,7 @@
     ======================================= */
     --color-background: var(--background);
     --color-foreground: var(--foreground);
+    --app-white: var(--app-white);
   
     /* =======================================
        Typography
@@ -132,4 +134,11 @@ body {
 
 h1 {
   @apply text-xl font-semibold text-gray-900;
+}
+
+
+.link-hover {
+   background: linear-gradient(90deg, #E6272730 19%, #8016161C 11%);
+   padding: 15px 18px;
+   border-radius: 10px;
 }

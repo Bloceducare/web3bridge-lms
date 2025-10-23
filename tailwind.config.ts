@@ -16,6 +16,7 @@ const config: Config = {
         // Base
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "app-white": "var(--app-white)",
 
         // Brand
         primary: "var(--color-primary)",
