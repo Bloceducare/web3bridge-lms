@@ -7,8 +7,8 @@ import bgTag from "@/public/assets/bg/inequality.svg?url";
 import bgSphere from "@/public/assets/bg/sphere.svg?url";
 import bgSpiral from "@/public/assets/bg/spiral.svg?url";
 import Logo from "@/public/assets/logo-light.svg?url";
-import AuthForm from "@/app/components/AuthForm";
-import OnboardingModal from "@/app/components/modal";
+import AuthForm from "@/component/AuthForm";
+// import OnboardingModal from "@/component/o";
 import { useState } from "react";
 
 export default function Page() {
@@ -74,7 +74,7 @@ export default function Page() {
 
         <AuthForm setOpen={setOpen} />
       </div>
-      <OnboardingModal isOpen={open} />
+      {/* <OnboardingModal isOpen={open} /> */}
     </div>
   );
 }

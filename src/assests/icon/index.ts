@@ -55,6 +55,7 @@ import Certification from "./graduating cap.svg?url";
 import CertificationFilled from "./graduatingcapfilled.svg?url";
 import LeaderBoard from "./target.svg?url";
 import LeaderBoardFilled from "./targetfilled.svg?url";
+import Hamburger from "./tabler_menu-4.svg?url";
 
 // Footer icons
 import Instagram from "./instagram.svg?url";
@@ -119,5 +120,6 @@ export {
   Card3, 
   Card4, 
   FirstLine,
-  Image1
+  Image1,
+  Hamburger
 };
