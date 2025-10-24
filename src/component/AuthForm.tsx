@@ -1,4 +1,4 @@
-import Connections from "./Connections";
+// import Connections from "./Connections";
 
 export default function AuthForm({
   setOpen,
@@ -34,7 +34,7 @@ export default function AuthForm({
         <div className="border-b border-gray-500 w-full"></div>
       </div>
 
-      <Connections />
+      {/* <Connections /> */}
     </div>
   );
 }
