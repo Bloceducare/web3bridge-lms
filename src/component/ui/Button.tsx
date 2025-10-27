@@ -10,9 +10,10 @@ interface ButtonProps {
   children?: React.ReactNode;
   onClick?: () => void;
   iconStyle?: string;
+  disabled?: boolean;
 }
 
-function Button({ variants, className = "", icon, children, onClick, iconStyle = "" }: ButtonProps) {
+function Button({ variants, className = "", icon, children, onClick, iconStyle = "", disabled }: ButtonProps) {
   const baseStyles =
     "flex items-center justify-center gap-8 px-4 py-2 rounded-full font-medium transition-all duration-200 cursor-pointer";
 
@@ -42,6 +43,7 @@ function Button({ variants, className = "", icon, children, onClick, iconStyle =
     <button
       onClick={onClick}
       className={combinedClass}
+      disabled={disabled}
     >
       {children}
 

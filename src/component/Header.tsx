@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/component/ui/Button";
 import { Logo } from "@/assests/icon";
+import { WalletConnect } from "@/context/walletConnect";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,7 +46,9 @@ const Navbar: React.FC = () => {
         <Link href="/auth" className="text-gray-800 hover:text-red-600">
           Login
         </Link>
-        <Button variants="active">Connect Wallet</Button>
+        {/* <Button variants="active">Connect Wallet</Button>
+         */}
+         <WalletConnect />
       </div>
 
       {/* Mobile Menu Button */}
