@@ -1,8 +1,16 @@
 import React from 'react'
+import DashboardEmptyState from '@/component/ui/EmptyState'
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+
+      <DashboardEmptyState />
+
+
+
+
+    </div>
   )
 }
 
