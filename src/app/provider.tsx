@@ -4,7 +4,7 @@ import { ReactNode, useState } from "react";
 import { WagmiProvider, State } from "wagmi";
 import { config } from "@/lib/wagmiConfig";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
+import { RainbowKitProvider, darkTheme, lightTheme } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
 
 export function Provider({
@@ -30,7 +30,7 @@ export function Provider({
   return (
     <WagmiProvider config={config} initialState={initialWagmiState}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider theme={darkTheme()}>
+        <RainbowKitProvider theme={lightTheme()}>
           {children}
         </RainbowKitProvider>
       </QueryClientProvider>
