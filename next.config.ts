@@ -1,4 +1,8 @@
 module.exports = {
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
   webpack(config: import('webpack').Configuration): import('webpack').Configuration {
     interface SvgRule {
       test: RegExp;
