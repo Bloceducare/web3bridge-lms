@@ -1,16 +1,16 @@
 "use client"
 import type { NextPage } from "next";
 import Head from "next/head";
-import Navbar from "@/app/components/Header";
-import Hero from "@/app/components/Hero";
-import Hero2 from "@/app/components/Hero2";
-import LearningPathSection from "@/app/components/LearningPathSection";
-import TechnologiesSection from "@/app/components/TechnologiesSection";
-import CertificationSection from "@/app/components/CertificationSection";
-import Footer from "@/app/components/Footer";
-import TestimonialsSection from "@/app/components/Testimonial";
-import FAQSection from "./components/FAQSection";
-import CardsSection from "./components/Hero1";
+import Navbar from "@/component/Header";
+import Hero from "@/component/Hero";
+import Hero2 from "@/component/Hero2";
+import LearningPathSection from "@/component/LearningPathSection";
+import TechnologiesSection from "@/component/TechnologiesSection";
+import CertificationSection from "@/component/CertificationSection";
+import Footer from "@/component/Footer";
+import TestimonialsSection from "@/component/Testimonial";
+import FAQSection from "@/component/FAQSection";
+import CardsSection from "@/component/Hero1";
 const Home: NextPage = () => {
   return (
     <div className="bg-[#FCF7F2] text-[#1B1B1B] ">
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
         <main className="">
           <Navbar />
-          <div className=" max-w-6xl mx-auto px-4 ">
+          <div className=" max-w-max mx-auto px-4 ">
             <CardsSection />
           </div>
           <div className="my-6 max-w-6xl mx-auto px-4 py-4">

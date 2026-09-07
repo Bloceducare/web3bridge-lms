@@ -1,21 +1,27 @@
-module.exports = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
-  webpack(config: import('webpack').Configuration): import('webpack').Configuration {
-    interface SvgRule {
-      test: RegExp;
-      use: string[];
-    }
 
-    const svgRule: SvgRule = {
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    };
+import type { NextConfig } from 'next';
+import type { Configuration } from 'webpack';
 
-    config.module?.rules?.push(svgRule);
+const nextConfig: NextConfig = {
+  webpack(config: Configuration) {
+    // Handle *.svg?url as file URLs
+    config.module?.rules?.push({
+      test: /\.svg$/i,
+      resourceQuery: /url/, // *.svg?url
+      type: 'asset/resource',
+    });
+
+    // Handle normal *.svg imports as React components
+    config.module?.rules?.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      resourceQuery: { not: [/url/] },
+      use: ['@svgr/webpack'],
+    });
+
     return config;
   },
 };
+
+export default nextConfig;
 

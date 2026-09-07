@@ -33,7 +33,7 @@ function Courses() {
         <Input placeholder='Search for courses, languages, or tracks ' />
       </section>
 
-      <section className='flex justify-end mt-8 pr-10 md:pr-20 gap-5 items-center'>
+      <section className='flex justify-end mt-8 pr-10co md:pr-20 gap-5 items-center'>
     
       <label className="flex items-center gap-3 border-[#E7D5D5E5] border-4 px-4 py-4 rounded-full cursor-pointer relative bg-gradient-to-r from-[#E7D5D566] via-[#E7D5D533] to-[#FFFFFF00]">
        
